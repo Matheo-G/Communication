@@ -12,7 +12,7 @@ from reportlab.graphics.barcode import qrencoder
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "cartes-de-visite"
-QR_URL = "https://matheo-g.github.io/Communication/"
+QR_URL = "https://matheo-gerardin.fr"
 
 CONTACT = {
     "email": "gerardinmatheo@gmail.com",
@@ -121,7 +121,7 @@ VERSO = Template("""
     <div class="contact">
       <span class="k mono">E-mail</span>$email
       <span class="k mono">LinkedIn</span>$linkedin
-      <span class="k mono">Portfolio</span>Scannez le code
+      <span class="k mono">Portfolio</span>matheo-gerardin.fr
     </div>
     <div style="display:flex; flex-direction:column; align-items:center; gap:1.2mm;">
       <div class="label mono" style="align-self:flex-start;">Portfolio</div>
