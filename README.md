@@ -9,7 +9,7 @@ Fichiers : `cartes-de-visite/qr-code/qr-code.svg` (vectoriel) et `qr-code.png`.
 
 ## Cartes de visite
 
-Format fini 85 × 55 mm. Les PDF font 91 × 61 mm (3 mm de fond perdu), page 1 = recto, page 2 = verso.
+Gabarit Vistaprint : format fini 85 × 55 mm, fichiers à 88 × 58 mm (1,5 mm de fond perdu), textes dans la zone de sécurité. Les PDF ont page 1 = recto, page 2 = verso, et toutes leurs polices intégrées en TrueType. Les fichiers `recto-impression-300dpi.png` et `verso-impression-300dpi.png` sont la même chose en image, fond perdu compris.
 
 | Situation | Recto | Verso | PDF d'impression |
 | --- | --- | --- | --- |
@@ -19,7 +19,7 @@ Format fini 85 × 55 mm. Les PDF font 91 × 61 mm (3 mm de fond perdu), page 1 =
 ## Régénérer
 
 ```bash
-pip install reportlab playwright opencv-python
+pip install reportlab playwright opencv-python fonttools pypdf
 python cartes-de-visite/src/build.py
 ```
 
